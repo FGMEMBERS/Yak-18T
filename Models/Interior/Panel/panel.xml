@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Panoramic http://album.reality.hu/2010/06/25/jak-18t-yak-18t-ha-jaj/ -->
+<!-- Work base :
+     http://www.airliners.net/photo/Moscow-Aviation-Institute/Yakovlev-Yak-18T/1602787/L/&sid=e767a10363501781c949760d8c35b9d2 -->
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- NAV LIGHT -->
+  <model>
+    <path>Aircraft/Yak-18T//Models/Interior/Panel/Instruments/divers/landing-lights.xml</path>
+    <offsets>
+      <x-m> -0.106 </x-m>
+      <y-m> -0.260 </y-m>
+      <z-m>  0.110 </z-m>
+      <pitch-deg> -4 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/Yak-18T//Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> -0.105 </x-m>
+      <y-m>  0.000</y-m>
+      <z-m>  0.080 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Yak-18T//Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.115 </x-m>
+      <y-m> -0.105 </y-m>
+      <z-m>  0.000 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Yak-18T//Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.115 </x-m>
+      <y-m> -0.105 </y-m>
+      <z-m>  0.090 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/Yak-18T//Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.115 </x-m>
+      <y-m>  0.105 </y-m>
+      <z-m>  0.090 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Yak-18T//Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> -0.115 </x-m>
+      <y-m> -0.030 </y-m>
+      <z-m> -0.089 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+
