@@ -95,14 +95,14 @@
   -->
   <propeller x="3.483" y="0" z="-0.057" 
              radius="1.2"
-	     mass="472" 
-	     moment="6"  
-	     cruise-speed="135" 
-	     cruise-rpm="2800"
-	     cruise-alt="6000" 
-	     cruise-power="350"
-	     takeoff-power="360" 
-	     takeoff-rpm="2900">
+             mass="472" 
+             moment="6"  
+             cruise-speed="135" 
+             cruise-rpm="2800"
+             cruise-alt="6000" 
+             cruise-power="350"
+             takeoff-power="360" 
+             takeoff-rpm="2900">
              <actionpt x="4.025" y="0" z="-0.089"/>
              <piston-engine eng-rpm="2900" 
                             eng-power="360"
@@ -164,4 +164,3 @@
   <ballast x="3" y="0" z="-2" mass="1000"/>
  
 </airplane>
-

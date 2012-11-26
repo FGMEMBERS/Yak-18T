@@ -5,7 +5,15 @@
 
   <sim>
     <description>Yak 18 T (YASim)</description>
-    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <author>BARANGER Emmanuel (3D/FDM)/ Samaliet (System/Instruments)</author>
+
+    <rating>
+      <FDM type="int">     3 </FDM>
+      <systems type="int"> 3 </systems>
+      <cockpit type="int"> 3 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+
   </sim>
 
 </PropertyList>

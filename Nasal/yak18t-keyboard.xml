@@ -7,16 +7,16 @@
     <desc>Passenger door</desc>
     <binding>
       <command>nasal</command>
-      <script>doors.doorsystem.passengerexport();</script>
+      <script>doors.crew.toggle();</script>
     </binding>
   </key>
 
   <key n="100">
     <name>d</name>
-    <desc>Canopy</desc>
+    <desc>Pilot door</desc>
     <binding>
      <command>nasal</command>
-     <script>doors.doorsystem.crewexport();</script>
+     <script>doors.passenger.toggle();</script>
     </binding>
   </key>
 

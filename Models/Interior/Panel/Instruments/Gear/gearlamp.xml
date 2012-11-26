@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>gearlamp.ac</path>
+
+  <animation>
+    <object-name>GearCtrl</object-name>
+    <object-name>nose.lamp</object-name>
+    <object-name>LH.lamp</object-name>
+    <object-name>RH.lamp</object-name>
+    <object-name>Gear.unlocked</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>nose.lamp</object-name>
+    <object-name>LH.lamp</object-name>
+    <object-name>RH.lamp</object-name>
+    <object-name>Gear.unlocked</object-name>
+    <emission>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>nose.lamp</object-name>
+    <condition>
+      <equals>
+        <property>gear/gear/position-norm</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>LH.lamp</object-name>
+    <condition>
+      <equals>
+        <property>gear/gear[1]/position-norm</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>RH.lamp</object-name>
+    <condition>
+      <equals>
+        <property>gear/gear[2]/position-norm</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Gear.unlocked</object-name>
+    <condition>
+      <and>
+        <less-than>
+          <property>gear/gear/position-norm</property>
+          <value>1</value>
+        </less-than>
+        <greater-than>
+          <property>gear/gear/position-norm</property>
+          <value>0</value>
+        </greater-than>
+      </and>
+    </condition>
+  </animation>
+
+</PropertyList>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-
 <PropertyList>
 
   <chase-distance-m type="double" archive="y"> -20 </chase-distance-m>
@@ -20,7 +19,7 @@
       <dynamic-view type="bool">true</dynamic-view>
     </config>
   </view>
-<!--
+
   <view n="101">
     <name>Rear Passanger Seat View</name>
     <internal archive="y">true</internal>
@@ -36,7 +35,7 @@
       <dynamic-view type="bool">true</dynamic-view>
     </config>
   </view>
--->
+
   <view n="102">
     <name>Tail Camera View</name>
     <type>lookfrom</type>
@@ -60,7 +59,7 @@
        <y-offset-m archive="y">  0.56624 </y-offset-m> <!-- Up    -->
        <z-offset-m archive="y"> -1.60683 </z-offset-m> <!-- Back  -->
        <pitch-offset-deg> -10 </pitch-offset-deg>
-      <default-field-of-view-deg> 70 </default-field-of-view-deg>
+       <default-field-of-view-deg> 80 </default-field-of-view-deg>
     </config>
   </view>
 

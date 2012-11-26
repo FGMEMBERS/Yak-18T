@@ -1,3 +1,6 @@
+##################################
+##         Light system         ##
+##################################
 var sbc1 = aircraft.light.new( "/sim/model/lights/sbc1", [0.5, 0.3] );
 sbc1.interval = 0.1;
 sbc1.switch( 1 );
@@ -34,3 +37,4 @@ strobe.interval = 0;
 setprop( "/instrumentation/nav[0]/ident", 0 );
 setprop( "/instrumentation/nav[1]/ident", 0 );
 
+var navLight = aircraft.light.new("/sim/model/lights/nav-lights", [0], "/controls/lighting/nav-lights");

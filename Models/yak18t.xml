@@ -17,7 +17,7 @@
       var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
 
       crew_door.alias(float_0);
-      passenger_door.alias(float_1);
+      passenger_door.alias(float_0);
     </load>
 
     <unload>
@@ -47,18 +47,29 @@
     <object-name>axes</object-name>
     <object-name>tailsupport</object-name>
     <object-name>pito</object-name>
+    <object-name>ManillaL</object-name>
+    <object-name>ManillaR</object-name>
 
     <object-name>trous</object-name>
+    <object-name>barre</object-name>
+    <object-name>marche</object-name>
     <object-name>echappes</object-name>
     <object-name>helice</object-name>
     <object-name>bol</object-name>
     <object-name>axeAH</object-name>
+    <object-name>axeAH2</object-name>
     <object-name>axeAB</object-name>
+    <object-name>TrenDEL</object-name>
+    <object-name>TrenDEL2</object-name>
     <object-name>roueA</object-name>
+    <object-name>LefttBrakeLine</object-name>
     <object-name>axeGH</object-name>
+    <object-name>axeGH2</object-name>
     <object-name>axeGB</object-name>
     <object-name>roueG</object-name>
+    <object-name>RightBrakeLine</object-name>
     <object-name>axeDH</object-name>
+    <object-name>axeDH2</object-name>
     <object-name>axeDB</object-name>
     <object-name>roueD</object-name>
 
@@ -86,22 +97,34 @@
     <object-name>profondeur</object-name>
     <object-name>portegauche</object-name>
     <object-name>portedroite</object-name>
+    <object-name>cache</object-name>
     <object-name>antenne</object-name>
     <object-name>axes</object-name>
     <object-name>tailsupport</object-name>
     <object-name>pito</object-name>
+    <object-name>ManillaL</object-name>
+    <object-name>ManillaR</object-name>
 
     <object-name>trous</object-name>
+    <object-name>barre</object-name>
+    <object-name>marche</object-name>
     <object-name>echappes</object-name>
     <object-name>helice</object-name>
     <object-name>bol</object-name>
     <object-name>axeAH</object-name>
+    <object-name>axeAH2</object-name>
     <object-name>axeAB</object-name>
+    <object-name>TrenDEL</object-name>
+    <object-name>TrenDEL2</object-name>
     <object-name>roueA</object-name>
+    <object-name>LefttBrakeLine</object-name>
     <object-name>axeGH</object-name>
+    <object-name>axeGH2</object-name>
     <object-name>axeGB</object-name>
     <object-name>roueG</object-name>
+    <object-name>RightBrakeLine</object-name>
     <object-name>axeDH</object-name>
+    <object-name>axeDH2</object-name>
     <object-name>axeDB</object-name>
     <object-name>roueD</object-name>
 
@@ -141,18 +164,18 @@
     <object-name>axes</object-name>
     <object-name>tailsupport</object-name>
     <object-name>pito</object-name>
+    <object-name>ManillaL</object-name>
+    <object-name>ManillaR</object-name>
   </effect>
-<!--  NO REMBRANDT support for transparent objects
+
   <animation>
     <type>noshadow</type>
     <object-name>vitres</object-name>
     <object-name>vitreportegauche</object-name>
     <object-name>vitreportedroite</object-name>
-    <object-name>propblur</object-name>
-    <object-name>propdisc</object-name>
     <object-name>tailbeacon</object-name>
   </animation>
--->
+
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
@@ -162,20 +185,19 @@
     <object-name>vitreportedroite</object-name>
   </animation>
 
-  <!--  REMBRANDT support for transparent objects -->
-  <effect>
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <object-name>propdisc</object-name>
-    <object-name>propblur</object-name>
-  </effect>
+  <!-- Interieur -->
+  <model>
+    <name>Interieur</name>
+    <path>Aircraft/Yak-18T/Models/Interior/interior.xml</path>
+  </model>
 
   <!-- Une ombre pour OSG -->
   <model>
     <path>Aircraft/Yak-18T/Models/shadow.xml</path>
     <offsets>
-      <x-m>  0.00 </x-m>
-      <y-m>  0.00 </y-m>
-      <z-m> -1.55 </z-m>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.480 </z-m>
     </offsets>
   </model>
 
@@ -231,17 +253,13 @@
       <z-m> -1.69946 </z-m>
     </offsets>
   </model>
-
-  <!-- Interieur -->
-  <model>
-    <path>Aircraft/Yak-18T/Models/Interior/interior.xml</path>
-  </model>
-
+  
   <!-- L'hélice -->
   <animation>
     <name>HeliceComplete</name>
     <object-name>helice</object-name>
     <object-name>bol</object-name>
+    <object-name>prophub</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
   </animation>
@@ -390,8 +408,11 @@
   <animation>
     <name>RoueAvant</name>
     <object-name>axeAH</object-name>
+    <object-name>axeAH2</object-name>
     <object-name>axeAB</object-name>
     <object-name>roueA</object-name>
+    <object-name>TrenDEL</object-name>
+    <object-name>TrenDEL2</object-name>
   </animation>
 
   <animation>
@@ -415,10 +436,32 @@
   </animation>
 
   <animation>
+    <type>rotate</type>
+    <object-name>axeAH2</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 105 </dep></entry>
+      <entry><ind> 1 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -3.18757 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.86986 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
     <name>RoueGauche</name>
     <object-name>axeGH</object-name>
+    <object-name>axeGH2</object-name>
     <object-name>axeGB</object-name>
     <object-name>roueG</object-name>
+    <object-name>LeftBrakeLine</object-name>
   </animation>
 
   <animation>
@@ -433,6 +476,26 @@
       <x-m> -1.23084 </x-m>
       <y-m> -1.66530 </y-m>
       <z-m> -0.59212 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>axeGH2</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> -120 </dep></entry>
+      <entry><ind> 1 </ind><dep>    0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -1.23030 </x-m>
+      <y-m> -1.64144 </y-m>
+      <z-m> -0.87264 </z-m>
     </center>
     <axis>
       <x> 1 </x>
@@ -464,8 +527,10 @@
   <animation>
     <name>RoueDroite</name>
     <object-name>axeDH</object-name>
+    <object-name>axeDH2</object-name>
     <object-name>axeDB</object-name>
     <object-name>roueD</object-name>
+    <object-name>RightBrakeLine</object-name>
   </animation>
 
   <animation>
@@ -480,6 +545,26 @@
       <x-m> -1.23084 </x-m>
       <y-m>  1.66530 </y-m>
       <z-m> -0.59212 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>axeDH2</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 120 </dep></entry>
+      <entry><ind> 1 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -1.23030 </x-m>
+      <y-m>  1.64144 </y-m>
+      <z-m> -0.87264 </z-m>
     </center>
     <axis>
       <x> 1 </x>
@@ -553,15 +638,30 @@
 
   <!-- Ouverture des portes -->
   <animation>
+    <type>pick</type>
+    <object-name>ManillaL</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
     <name>LaPorteGauche</name>
     <object-name>portegauche</object-name>
     <object-name>vitreportegauche</object-name>
+    <object-name>ManillaL</object-name>
   </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>LaPorteGauche</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> -80 </factor>
     <axis>
       <x1-m> -2.10869 </x1-m>
@@ -574,15 +674,30 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>ManillaR</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
     <name>LaPorteDroite</name>
     <object-name>portedroite</object-name>
     <object-name>vitreportedroite</object-name>
+    <object-name>ManillaR</object-name>
   </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>LaPorteDroite</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
+    <property>sim/model/door-positions/passenger/position-norm</property>
     <factor> -80 </factor>
     <axis>
       <x1-m> -2.10869 </x1-m>
@@ -642,26 +757,13 @@
 
   <!-- Wing light cone -->
   <model>
-    <name>Landing-Light</name>
     <path>Aircraft/Yak-18T/Models/light/light-cone.xml</path>
     <offsets>
-      <x-m>       -1.98112 </x-m>
+      <x-m>       -1.99000 </x-m>
       <y-m>       -3.31250 </y-m>
       <z-m>       -0.31083 </z-m>
       <pitch-deg> -7.50000 </pitch-deg>
     </offsets>
   </model>
 
-  <animation>
-    <type>select</type>
-    <object-name>Landing-Light</object-name>
-    <condition>
-      <equals>
-        <property>controls/switches/landing-light</property>
-        <value> 1 </value>
-      </equals>
-    </condition>
-  </animation>
-
 </PropertyList>
-
