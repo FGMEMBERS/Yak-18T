@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>throttles.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>base</object-name>
+    <object-name>Throttle</object-name>
+    <object-name>PropPitch</object-name>
+    <object-name>Mixture</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Throttle</object-name>
+    <property>controls/engines/engine/throttle</property>
+    <factor> -50 </factor>
+    <center>
+      <x-m>  0.01449 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.07607 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>PropPitch</object-name>
+    <property>controls/engines/engine/propeller-pitch</property>
+    <factor> 45 </factor>
+    <center>
+      <x-m>  0.01449 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.07607 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Mixture</object-name>
+    <property>controls/engines/engine/mixture</property>
+    <factor> 45 </factor>
+    <center>
+      <x-m>  0.01449 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.07607 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

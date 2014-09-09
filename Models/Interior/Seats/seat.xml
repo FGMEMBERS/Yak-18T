@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>seat.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>Base</object-name>
+    <object-name>base</object-name>
+    <object-name>seat</object-name>
+    <object-name>tubes</object-name>
+    <object-name>poignee</object-name>
+    <object-name>lever</object-name>
+    <object-name>lever1</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+</PropertyList>

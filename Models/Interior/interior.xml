@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>intportegauche</object-name>
+    <object-name>intportedroite</object-name>
+    <object-name>RightVisor</object-name>
+    <object-name>LeftVisor</object-name>
+    <object-name>portecarteL</object-name>
+    <object-name>portecartehautL</object-name>
+    <object-name>portecarteR</object-name>
+    <object-name>portecartehautR</object-name>
+    <object-name>carte</object-name>
+    <object-name>Ceniceros</object-name>
+    <object-name>IntManillaL</object-name>
+    <object-name>IntManillaR</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+    <object-name>intvitreportegauche</object-name>
+    <object-name>intvitreportedroite</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreportegauche</object-name>
+    <object-name>intvitreportedroite</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreportegauche</object-name>
+    <object-name>intvitreportedroite</object-name>
+  </animation>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -1.83560 </x-m>
+      <y-m> -0.27000 </y-m>
+      <z-m>  0.02098 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -2.16272 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.28496 </z-m>
+    </offsets>
+  </model>
+
+  <!-- OAT
+  <model>
+    <name>Instr-OAT</name>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/oat/oat_3d.xml</path>
+    <offsets>
+      <x-m> -1.512 </x-m>
+      <y-m>  0.534 </y-m>
+      <z-m>  0.155 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+  -->
+
+  <!-- Siège pilote -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -1.35886 </x-m>
+      <y-m> -0.31196 </y-m>
+      <z-m>  0.21797 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Siège copilote -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -1.35886 </x-m>
+      <y-m>  0.31196 </y-m>
+      <z-m>  0.21797 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Siège arrière -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Seats/rear.xml</path>
+    <offsets>
+      <x-m> -0.60145 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.04754 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Ouverture des portes -->
+  <animation>
+    <type>pick</type>
+    <object-name>IntManillaL</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <name>IntLaPorteGauche</name>
+    <object-name>intportegauche</object-name>
+    <object-name>intvitreportegauche</object-name>
+    <object-name>portecarteL</object-name>
+    <object-name>portecartehautL</object-name>
+    <object-name>IntManillaL</object-name>
+    <object-name>carte</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>IntLaPorteGauche</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <factor> -80 </factor>
+    <axis>
+      <x1-m> -2.10869 </x1-m>
+      <y1-m> -0.61792 </y1-m>
+      <z1-m> -0.02628 </z1-m>
+      <x2-m> -2.10869 </x2-m>
+      <y2-m> -0.60993 </y2-m>
+      <z2-m>  0.18235 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>IntManillaR</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <name>IntLaPorteDroite</name>
+    <object-name>intportedroite</object-name>
+    <object-name>intvitreportedroite</object-name>
+    <object-name>portecarteR</object-name>
+    <object-name>portecartehautR</object-name>
+    <object-name>IntManillaR</object-name>
+    <!--
+    <object-name>Instr-OAT</object-name>
+    -->
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>IntLaPorteDroite</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
+    <factor> -80 </factor>
+    <axis>
+      <x1-m> -2.10869 </x1-m>
+      <y1-m>  0.60993 </y1-m>
+      <z1-m>  0.18235 </z1-m>
+      <x2-m> -2.10869 </x2-m>
+      <y2-m>  0.61792 </y2-m>
+      <z2-m> -0.02628 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- picks for left visor -->
+  <animation>
+    <type>pick</type>
+    <object-name>LeftVisor</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.leftvisor.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>LeftVisor</object-name>
+    <property>sim/model/door-positions/leftvisor/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 60 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -2.06382 </x1-m>
+      <y1-m> -0.01537 </y1-m>
+      <z1-m>  0.74723 </z1-m>
+      <x2-m> -1.93780 </x2-m>
+      <y2-m> -0.38236 </y2-m>
+      <z2-m>  0.71401 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- picks for right visor -->
+  <animation>
+    <type>pick</type>
+    <object-name>RightVisor</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.rightvisor.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>RightVisor</object-name>
+    <property>sim/model/door-positions/rightvisor/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 60 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -1.93780 </x1-m>
+      <y1-m>  0.38236 </y1-m>
+      <z1-m>  0.71401 </z1-m>
+      <x2-m> -2.06382 </x2-m>
+      <y2-m>  0.01537 </y2-m>
+      <z2-m>  0.74723 </z2-m>
+    </axis>
+  </animation>
+
+</PropertyList>

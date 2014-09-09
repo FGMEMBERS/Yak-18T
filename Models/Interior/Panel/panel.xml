@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Panoramic http://album.reality.hu/2010/06/25/jak-18t-yak-18t-ha-jaj/ -->
+<!-- Work base :
+     http://www.airliners.net/photo/Moscow-Aviation-Institute/Yakovlev-Yak-18T/1602787/L/&sid=e767a10363501781c949760d8c35b9d2 -->
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- OSG hotspots-->
+  <controls>
+    <lighting>
+      <instruments-norm>1.0</instruments-norm>
+    </lighting>
+    <fuel>
+      <switch-position type = "int">-1</switch-position>
+    </fuel>
+    <gear>
+      <brake-parking type="double">1.0</brake-parking>
+      <gear-down type="bool">1.0</gear-down>
+    </gear>
+    <engines>
+      <engine>
+        <mixture>1.0</mixture>
+      </engine>
+    </engines>
+    <electric>
+      <avionics-switch type="bool">1</avionics-switch>
+    </electric>
+    <doors>
+      <open n="0" type="bool">0</open>
+      <open n="1" type="bool">0</open>
+      <open n="2" type="bool">0</open>
+      <open n="3" type="bool">0</open>
+      <position-norm n="0" type="double">0</position-norm>
+      <position-norm n="1" type="double">0</position-norm>
+      <position-norm n="2" type="double">0</position-norm>
+      <position-norm n="3" type="double">0</position-norm>
+    </doors>
+  </controls>
+  
+  <!-- AI -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/pkp/pkp.xml</path>
+    <offsets>
+      <x-m> -0.096 </x-m>
+      <y-m> -0.128 </y-m>
+      <z-m>  0.071 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Garmin GPS196 support -->
+  <model>
+  <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/garmin196/garmin196_support2.xml</path>
+    <offsets>
+      <x-m>  0.010 </x-m>
+      <y-m> -0.090 </y-m>
+      <z-m>  0.225 </z-m>
+     <heading-deg> -20 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!-- Fuel gauge -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/FuelGauge/FuelGauge.xml</path>
+    <offsets>
+      <x-m> -0.109 </x-m>
+      <y-m> -0.012 </y-m>
+      <z-m> -0.098 </z-m>
+      <pitch-deg> 1 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- EGT -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/EGT-OAT/EGT-OAT.xml</path>
+    <offsets>
+      <x-m> -0.097 </x-m>
+      <y-m>  0.354 </y-m>
+      <z-m>  0.039 </z-m>
+      <pitch-deg> -4 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Oil Gauge -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/OilGauge/OilGauge.xml</path>
+    <offsets>
+      <x-m> -0.096 </x-m>
+      <y-m>  0.288 </y-m>
+      <z-m>  0.040 </z-m>
+      <pitch-deg> -4 </pitch-deg>
+    </offsets>
+  </model>
+
+ <!-- Clock -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/Clock/Clock.xml</path>
+    <offsets>
+      <x-m> -0.106 </x-m>
+      <y-m>  0.288 </y-m>
+      <z-m>  0.097 </z-m>
+      <pitch-deg> -4 </pitch-deg>
+    </offsets>
+  </model>
+
+ <!-- Warning --> 
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/warning/warning.xml</path>
+    <offsets>
+      <x-m>  0.017 </x-m>
+      <y-m> -0.201 </y-m>
+      <z-m>  0.177 </z-m>
+    </offsets>
+  </model>
+
+ <!-- kr10a -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/kra10a/kra10a.xml</path>
+    <offsets>
+      <x-m> -0.110 </x-m>
+      <y-m>  0.175 </y-m>
+      <z-m> -0.090 </z-m>
+      <pitch-deg> 1 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- HI -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/hi/hi.xml</path>
+    <offsets>
+      <x-m> -0.110 </x-m>
+      <y-m>  0.089 </y-m>
+      <z-m> -0.008 </z-m>
+      <pitch-deg> 1 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- ki252a -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/ki252a/ki252a.xml</path>
+    <offsets>
+      <x-m> -0.114 </x-m>
+      <y-m> -0.128 </y-m>
+      <z-m> -0.063 </z-m>
+      <pitch-deg> 1 </pitch-deg>
+    </offsets>
+  </model>
+
+ <!-- dme40 -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/dme40/dme40.xml</path>
+    <offsets>
+      <x-m> -0.111 </x-m>
+      <y-m>  0.174 </y-m>
+      <z-m>  0.090 </z-m>
+      <pitch-deg> 1 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/altimeter/altimeter.xml</path>
+    <offsets>
+      <x-m> -0.111 </x-m>
+      <y-m> -0.005 </y-m>
+      <z-m>  0.084 </z-m>
+      <pitch-deg> 1 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.112 </x-m>
+      <y-m> -0.007 </y-m>
+      <z-m> -0.008 </z-m>
+      <pitch-deg> 1 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.093 </x-m>
+      <y-m> -0.303 </y-m>
+      <z-m> -0.014 </z-m>
+      <pitch-deg> -3 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- RPM -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/rpm/tach.xml</path>
+    <offsets>
+      <x-m> -0.109 </x-m>
+      <y-m>  0.087 </y-m>
+      <z-m>  0.085 </z-m>
+      <pitch-deg> 1 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Magnetic Compass -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/MagneticCompass/MagneticCompass.xml</path>
+    <offsets>
+      <x-m> -0.005 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.350 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/kr87-adf/kr87.xml</path>
+    <offsets>
+      <x-m> -0.100 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.170 </z-m>
+      <pitch-deg> -30 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- ADF -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/kr87-adf/ki227-01.xml</path>
+    <offsets>
+      <x-m> -0.114 </x-m>
+      <y-m>  0.091 </y-m>
+      <z-m> -0.099 </z-m>
+      <pitch-deg> 1 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Pilot audio plug -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/audio-plug/audio-plug.xml</path>
+    <offsets>
+      <x-m> -0.098 </x-m>
+      <y-m> -0.477 </y-m>
+      <z-m> -0.005 </z-m>
+      <pitch-deg> -4 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- KI206 -->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/ki206/ki206.xml</path>
+    <offsets>
+      <x-m> -0.108 </x-m>
+      <y-m>  0.178 </y-m>
+      <z-m> -0.008 </z-m>
+      <pitch-deg> 1 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- KX165-->
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/kx165/kx165-1.xml</path>
+    <offsets>
+      <x-m> -0.093 </x-m>
+      <y-m> -0.409 </y-m>
+      <z-m> -0.134 </z-m>
+      <pitch-deg> -4 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/kap140/KAP140TwoAxisAlt.xml</path>
+    <offsets>
+      <x-m> -0.099 </x-m>
+      <y-m>  0.357 </y-m>
+      <z-m> -0.014 </z-m>
+      <pitch-deg> -4 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/egt/egt.xml</path>
+    <offsets>
+      <x-m> -0.104 </x-m>
+      <y-m> -0.301 </y-m>
+      <z-m>  0.072 </z-m>
+      <pitch-deg> -4 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/pm/magnetos.xml</path>
+    <offsets>
+      <x-m> -0.096 </x-m>
+      <y-m> -0.413 </y-m>
+      <z-m>  0.008 </z-m>
+      <pitch-deg> -4 </pitch-deg>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/fuel2/fuel-select.xml</path>
+    <offsets>
+      <x-m>  0.19161 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.30971 </z-m>
+      <pitch-deg> -23 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/Throttles/throttles.xml</path>
+    <offsets>
+      <x-m>  0.0500 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -0.2200 </z-m>
+      <pitch-deg> 14 </pitch-deg>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/Gear/lever.xml</path>
+    <offsets>
+      <x-m> -0.07707 </x-m>
+      <y-m> -0.48939 </y-m>
+      <z-m> -0.23671 </z-m>
+      <pitch-deg> -10 </pitch-deg>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/Gear/gearlamp.xml</path>
+    <offsets>
+      <x-m> -0.09191 </x-m>
+      <y-m> -0.41139 </y-m>
+      <z-m> -0.06100 </z-m>
+      <pitch-deg> -4 </pitch-deg>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/divers/ajout.xml</path>
+    <offsets>
+      <x-m>  0.006253 </x-m>
+      <y-m> -0.255200 </y-m>
+      <z-m>  0.148740 </z-m>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/Yokes/yoke.xml</path>
+    <offsets>
+      <x-m> -0.12769 </x-m>
+      <y-m> -0.30195 </y-m>
+      <z-m> -0.09932 </z-m>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/Yokes/yoke.xml</path>
+    <offsets>
+      <x-m> -0.12769 </x-m>
+      <y-m>  0.30195 </y-m>
+      <z-m> -0.09932 </z-m>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/kt70/kt70.xml</path>
+    <offsets>
+      <x-m>  0.078 </x-m>
+      <y-m> -0.113 </y-m>
+      <z-m> -0.246 </z-m>
+      <roll-deg>    -13 </roll-deg>
+      <pitch-deg>   -90 </pitch-deg>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/Pedals/pedals.xml</path>
+    <offsets>
+      <x-m> -0.19573 </x-m>
+      <y-m> -0.30433 </y-m>
+      <z-m> -0.56740 </z-m>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/Pedals/pedals.xml</path>
+    <offsets>
+      <x-m> -0.19573 </x-m>
+      <y-m>  0.30433 </y-m>
+      <z-m> -0.56740 </z-m>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/Switch/batt-lights.xml</path>
+    <offsets>
+      <x-m> -0.07484 </x-m>
+      <y-m> -0.41314 </y-m>
+      <z-m> -0.25174 </z-m>
+      <pitch-deg> -10 </pitch-deg>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/Switch/alt-lights.xml</path>
+    <offsets>
+      <x-m> -0.07484 </x-m>
+      <y-m> -0.33414 </y-m>
+      <z-m> -0.25174 </z-m>
+      <pitch-deg> -10 </pitch-deg>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/Switch/pump-lights.xml</path>
+    <offsets>
+      <x-m> -0.07484 </x-m>
+      <y-m> -0.29414 </y-m>
+      <z-m> -0.25174 </z-m>
+      <pitch-deg> -10 </pitch-deg>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/Switch/pito-lights.xml</path>
+    <offsets>
+      <x-m> -0.07484 </x-m>
+      <y-m> -0.25414 </y-m>
+      <z-m> -0.25174 </z-m>
+      <pitch-deg> -10 </pitch-deg>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/Switch/instr-lights.xml</path>
+    <offsets>
+      <x-m> -0.07484 </x-m>
+      <y-m> -0.20214 </y-m>
+      <z-m> -0.25174 </z-m>
+      <pitch-deg> -10 </pitch-deg>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/Switch/land-lights.xml</path>
+    <offsets>
+      <x-m> -0.07484 </x-m>
+      <y-m> -0.16214 </y-m>
+      <z-m> -0.25174 </z-m>
+      <pitch-deg> -10 </pitch-deg>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/Switch/nav-lights.xml</path>
+    <offsets>
+      <x-m> -0.07484 </x-m>
+      <y-m> -0.12214 </y-m>
+      <z-m> -0.25174 </z-m>
+      <pitch-deg> -10 </pitch-deg>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Yak-18T/Models/Interior/Panel/Instruments/Switch/starter.xml</path>
+    <offsets>
+      <x-m> -0.10047 </x-m>
+      <y-m> -0.36014 </y-m>
+      <z-m>  0.03226 </z-m>
+      <pitch-deg> -4 </pitch-deg>
+     </offsets>
+  </model>
+
+</PropertyList>

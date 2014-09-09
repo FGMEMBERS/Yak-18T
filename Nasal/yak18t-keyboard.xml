@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <key n="68">
+    <name>D</name>
+    <desc>Passenger door</desc>
+    <binding>
+      <command>nasal</command>
+      <script>doors.crew.toggle();</script>
+    </binding>
+  </key>
+
+  <key n="100">
+    <name>d</name>
+    <desc>Pilot door</desc>
+    <binding>
+     <command>nasal</command>
+     <script>doors.passenger.toggle();</script>
+    </binding>
+  </key>
+
+</PropertyList>
+
